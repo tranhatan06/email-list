@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+    <!--
+        Same "murach" database and [User] table used by the sqlgateway app.
+        Replace username/password with your real SQL Server credentials.
+    -->
+    <Resource name="jdbc/murach" auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+        url="jdbc:sqlserver://localhost\SQLEXPRESS;databaseName=murach;encrypt=true;trustServerCertificate=true"
+        username="sqlTest"
+        password="MatKhauMoiCuaBan123!"
+        maxActive="100" maxIdle="30" maxWait="10000"
+        logAbandoned="true" removeAbandoned="true"
+        removeAbandonedTimeout="60" />
+
+</Context>
